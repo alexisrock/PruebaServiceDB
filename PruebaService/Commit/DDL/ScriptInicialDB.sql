@@ -27,6 +27,8 @@ Values(@Name,@Description,@Price, @Stock );
 
 GO
 
+ 
+
 CREATE PROCEDURE SpUpdateProducts
  @Id int,
  @Name nvarchar(400),
@@ -35,7 +37,7 @@ CREATE PROCEDURE SpUpdateProducts
  @Stock int 
 as
 
-update Tbl_Producto 
+update Tbl_Productos 
 	set Name = @Name,
 	Description = @Description,
 	Price = @Price,
@@ -49,7 +51,6 @@ CREATE PROCEDURE SpDeleteProducts
  @Id int
 as
 
- Delete from Tbl_Producto where Id = @Id
  Delete from Tbl_Producto where Id = @Id
 
 GO
