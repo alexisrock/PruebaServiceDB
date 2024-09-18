@@ -51,7 +51,7 @@ CREATE PROCEDURE SpDeleteProducts
  @Id int
 as
 
- Delete from Tbl_Producto where Id = @Id
+ Delete from Tbl_Productos where Id = @Id
 
 GO
 
